@@ -1,0 +1,86 @@
+.section-process{
+    background-color: var(--ghost-white);
+   padding: 15rem 6rem 25rem ;
+   color:var(--dark-purple);
+   position: relative;
+   @media only  screen and (max-width:$bp-largest){
+    padding-inline:5rem;
+}
+   @media only  screen and (max-width:$bp-largest){
+    padding-inline:5rem;
+}
+   @media only  screen and (max-width:$bp-medium){
+    padding-top:20rem;
+}
+   @media only  screen and (max-width:$bp-medium){
+    padding-bottom:18rem;
+}
+
+}
+.process{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+    grid-column-gap:4rem;
+    grid-row-gap: 8rem;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    @media only  screen and (max-width:$bp-largest){
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    }
+    @media only screen and (max-width:$bp-large){
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+            }
+            @media only screen and (max-width:$bp-medium){
+                grid-template-columns:70rem;
+                 grid-template-rows: repeat(3,1fr);
+                 grid-row-gap:0rem;
+                 justify-items: start;
+                 text-align: start;
+                 justify-content: center;
+                
+                    }
+                    @media only screen and (max-width:$bp-small){
+                        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+                        justify-items: center;
+                 text-align: center;
+                 justify-content: center;
+                 grid-row-gap:3rem;
+                            }
+
+    &__details{
+        @media only screen and (max-width:$bp-medium){
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: repeat(2,1fr);
+            grid-column-gap:3.5rem;
+        }
+        @media only screen and (max-width:$bp-smallest){
+            display: block;
+            
+        }
+        
+
+    }
+    &__number{margin-inline: auto;
+        font-weight: 400;
+        
+        height:5.6rem;
+        width:5.6rem;
+        border-radius: 50%;
+        border:1px solid var(--davy-grey); ;
+        justify-self: end;
+        align-self: end;
+        text-align: center;
+        position: relative;
+        transform:translateY(10px);
+      
+
+    }
+    &__text{
+        @media only screen and (max-width:$bp-medium){
+grid-row:2/3;
+grid-column: 2/3;
+    }
+}
+}

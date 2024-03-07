@@ -1,0 +1,155 @@
+.section-cta{
+padding-top:15rem;
+padding-bottom:10rem;
+padding-inline: 10rem;
+@media only  screen and (max-width:$bp-largest){
+    padding-bottom:14rem;
+    margin-bottom: 0;
+     }
+
+@media only  screen and (max-width:$bp-large){
+    padding-bottom:18rem;
+    margin-bottom: 0;
+    padding-inline: 5rem;
+     
+}
+@media only  screen and (max-width:$bp-smallest){
+   
+    padding-inline: 2rem;
+    padding-bottom:12rem;
+     
+}
+}
+.cta{
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    ;
+    grid-template-rows: repeat(10,1fr);
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    @media only  screen and (max-width:$bp-largest){
+        grid-template-columns: repeat(13,1fr);
+        grid-template-rows: repeat(8,1fr);
+       
+         }
+    @media only  screen and (max-width:$bp-smallest){
+        grid-template-columns: repeat(13,1fr);
+        grid-template-rows: repeat(6,1fr);
+        justify-content: start;
+    ;
+     
+       
+         }
+   
+    
+    &__image{
+        width: 477px;;
+        height: 477px;
+        grid-column:3/11;
+        grid-row:1/10;
+        @media only  screen and (max-width:$bp-mega){
+       grid-column:2/6;
+        }
+        @media only  screen and (max-width:$bp-largest){
+       grid-column:1/6;
+        }
+        @media only screen and (max-width:$bp-large){
+            width: 400px;;
+        height: 400px;
+                }
+        @media only screen and (max-width:$bp-medium){
+            width: 280px;;
+        height: 280px;
+                }
+                @media only screen and (max-width:$bp-smallest){
+                    align-self: start;
+                    
+                    margin-bottom: -3px;
+                    grid-column: 2/5;
+                }
+    }
+    &__details{
+        width:73rem;
+       
+        background-color:var(--dark-purple) ;
+        padding: 4rem;
+        grid-column:6/10;
+        grid-row:6/11;
+        @media only  screen and (max-width:$bp-mega){
+            grid-row:4/9;
+             }
+        @media only  screen and (max-width:$bp-largest){
+            grid-column:6/10;
+            grid-row:4/9;
+            align-self: center;
+           width:65rem;
+             }
+             @media only screen and (max-width:$bp-large){
+                grid-row:4/9;
+                width: 62rem;;
+                padding:4rem;
+                
+            
+                    }
+             @media only screen and (max-width:$bp-medium){
+                grid-row:3/8;
+                width: 60rem;;
+                padding:4rem;
+                grid-column:5/9;
+            
+                    }
+             @media only screen and (max-width:$bp-smallest){
+                grid-row:3/6;
+                width: 45rem;;
+                padding: 3rem;
+                
+              
+                grid-column:1/13;
+            
+                    }
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width:20rem;
+            height:20rem;
+             background-image: url(../images/bg-pattern-3.svg);
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            bottom:-6rem;
+           right:10%;
+            transform: translateX(-50%);
+            @media only  screen and (max-width:$bp-mega){
+                top:62%;
+                right:0;
+                left:85%;
+                 }
+            @media only  screen and (max-width:$bp-largest){
+                top:80%;
+                right:0;
+                left:85%;
+                 }
+            @media only  screen and (max-width:$bp-large){
+                top:60%;
+                right:0;
+                left:78%;
+                 }
+            @media only  screen and (max-width:$bp-medium){
+                top:65%;
+                right:0;
+                left:78%;
+                 }
+                  @media only screen and (max-width:$bp-small){
+            display: none;
+                }
+            
+        }
+        
+    }
+    &__text{
+        color:rgba(#fff,.5);
+    }
+}
